@@ -1,0 +1,20 @@
+#include <iostream>
+#include "movie.h"
+
+using namespace std;
+
+movie::movie() {
+  cout << "movie cpp!" << endl;
+
+  id=1;
+  n=0;
+
+}
+
+void movie::setN() {
+
+  n=20;
+}
+int movie::getN() {
+  return n;
+}

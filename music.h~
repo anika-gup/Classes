@@ -1,0 +1,21 @@
+#ifndef MUSIC_H
+#define MUSIC_H
+
+#include <iostream>
+#include "parent.h"
+
+using namespace std;
+
+class music:public parent {
+
+
+ public:
+  music();
+  void setN();
+  int getN();
+
+ protected:
+  int n;
+
+} ;
+#endif

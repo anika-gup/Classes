@@ -1,0 +1,21 @@
+#include <iostream>
+#include "music.h"
+
+using namespace std;
+
+music::music() {
+
+  cout << "music cpp !!"  << endl;
+
+  id =1;
+  n=0;
+
+}
+
+void music::setN() {
+  n=20;
+}
+
+int music::getN() {
+  return n;
+}

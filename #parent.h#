@@ -1,0 +1,20 @@
+#ifndef PARENT_H
+#define PARENT_H
+
+#include <iostream>
+using namespace std;
+
+class parent {
+ public:
+  parent();
+  void setTitle(char myTitle[50]);
+  char* getTitle();
+  void setYear(int Year);
+  int getYear();
+
+ protected:
+  int year;
+  char title[50];
+};
+
+#endif

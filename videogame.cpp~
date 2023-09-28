@@ -1,0 +1,56 @@
+#include <iostream>
+#include "videogame.h"
+
+using namespace std;
+
+
+videogame::videogame() {
+  cout << "video game cpp!!" << endl;
+  year=0;
+  title=" ";
+  publisher=" ";
+  rating=0;
+  
+
+
+
+}
+void setTitle(char myTitle[50]) {
+  title = myTitle;
+
+}
+
+char* getTitle() {
+  //cout << "Title: " << title << endl;
+  char* titlep = title;
+  return titlep;
+}
+
+void setYear(int Year) {
+  year = Year;
+
+}
+int getYear() {
+  //cout << "Year: " << year << endl;
+  return year;
+}
+
+void setPublisher(char Publisher[50]) {
+  publisher = Publisher;
+
+}
+
+char* getPublisher() {
+  //cout << "Publisher: " << publisher << endl;
+  char* publisherp = publisher;
+  return publisherp;
+}
+
+void setRating(int Rating) {
+  rating = Rating;
+}
+
+int getRating() {
+  //cout << "Rating: " << rating << endl;
+  return rating;
+}
