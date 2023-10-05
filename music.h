@@ -17,6 +17,7 @@ class music:public parent {
   int getDuration();
   void setPublisher (char Publisher[50]);
   char* getPublisher();
+  void printMe();
  protected:
   char artist[50];
   int duration;

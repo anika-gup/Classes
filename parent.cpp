@@ -3,7 +3,7 @@
 using namespace std;
 
 parent::parent() {
-  cout << "Parent CPP !!" << endl;
+  // cout << "Parent CPP !!" << endl;
  
 }
 

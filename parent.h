@@ -11,7 +11,7 @@ class parent {
   char* getTitle();
   void setYear(int Year);
   int getYear();
-
+  virtual void printMe() = 0;
  protected:
   int year;
   char title[50];

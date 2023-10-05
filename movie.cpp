@@ -4,7 +4,7 @@
 using namespace std;
 
 movie::movie() {
-  cout << "movie cpp!" << endl;
+  //  cout << "movie cpp!" << endl;
 
  
 }
@@ -27,4 +27,8 @@ int movie::getDuration() {
 }
 void movie::setDuration(int Duration) {
   duration = Duration;
+}
+
+void movie::printMe() {
+  cout << ", Director: " << director << ", Rating: " << rating << ", Duration: " << duration << endl;
 }

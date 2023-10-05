@@ -5,13 +5,13 @@ using namespace std;
 
 
 videogame::videogame() {
-  cout << "video game cpp!!" << endl;
+  //cout << "video game cpp!!" << endl;
 
 }
 
 
 void videogame::setPublisher(char Publisher[50]) {
-  cout << "Adding publisher: " << Publisher << endl;
+  //cout << "Adding publisher: " << Publisher << endl;
   strcpy(publisher, Publisher);
 
 }
@@ -29,4 +29,9 @@ void videogame::setRating(int Rating) {
 int videogame::getRating() {
   //cout << "Rating: " << rating << endl;
   return rating;
+}
+
+void videogame::printMe() {
+  cout << ", Publisher: " << publisher << ", Rating: " << rating << endl;
+
 }

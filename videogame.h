@@ -11,9 +11,10 @@ class videogame:public parent {
  public:
   videogame();
   void setPublisher(char Publisher[50]);
-  char* getPublisher(); // how to return publisher ? -- just printing
+  char* getPublisher(); 
   void setRating(int Rating);
-  int getRating(); 
+  int getRating();
+  void printMe();
  protected:
   char publisher[50];
   int rating;

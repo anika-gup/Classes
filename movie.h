@@ -17,6 +17,7 @@ class movie:public parent {
   void setRating(int Rating);
   int getDuration();
   void setDuration(int Duration);
+  void printMe();
  protected:
   char director[50];
   int rating;

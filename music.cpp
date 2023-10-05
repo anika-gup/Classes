@@ -5,7 +5,7 @@ using namespace std;
 
 music::music() {
 
-  cout << "music cpp !!"  << endl;
+  //cout << "music cpp !!"  << endl;
 
  
 }
@@ -27,4 +27,8 @@ void music::setPublisher(char Publisher[50]) {
 }
 char* music::getPublisher() {
   return publisher;
+}
+
+void music::printMe() {
+  cout << ", Artist: " << artist << ", Duration: " << duration << ", Publisher: " << publisher << endl;
 }
