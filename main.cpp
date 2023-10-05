@@ -5,6 +5,8 @@
 #include "music.h"
 #include "movie.h"
 #include "videogame.h"
+// Classes and Inheritance Anika Gupta 10/5/23
+// To store different types (movies, music, and videogames) along with information about each type.
 using namespace std;
 music* ADD_M();
 movie* ADD_MV();
@@ -23,16 +25,18 @@ int main() {
   char choice[6];
   int quit = 0;
 
-  while (quit==0) {
+  while (quit==0) { // while user hasn't quit
     cout << "Commands are: ADD, SEARCH, DELETE, QUIT." << endl;
     //cout << "About to take in a choice" << endl;
     cin >> choice;
     //cout << "I took in a choice." << endl;
+	
     if (choice[0]=='A' && choice[1]=='D' && choice[2]=='D') {
       //  cout << "Creating something..." << endl;
       quit=0;
       cout << "CHOICES:  VIDEOGAME  MOVIE  MUSIC" << endl;
       cin >> choice;
+	    //creating some kind of object (as specified by user)
       if (strcmp(choice, "VIDEOGAME")==0) {
 	//cout << "creating video game." << endl;
 	storage->push_back(ADD_VG());
@@ -74,7 +78,7 @@ int main() {
   return 0;
 }
 
-music* ADD_M() {
+music* ADD_M() { // to add music
   music* m = new music();
   //cout << "in function to add music" << endl;
   int year;
@@ -99,7 +103,7 @@ music* ADD_M() {
   m->setPublisher(publisher);
   return m;
 }
-movie* ADD_MV() {
+movie* ADD_MV() { //to add movie
   movie* mv = new movie();
   //cout << "in function to add movie" << endl;
   char title[50];
@@ -124,7 +128,7 @@ movie* ADD_MV() {
   mv->setRating(rating);
   return mv;
 }
-videogame* ADD_VG() {
+videogame* ADD_VG() { //to add videogame
   videogame* vg = new videogame();
   //cout << "in function to add videogame" << endl;
   char title[50];
